@@ -1,22 +1,20 @@
 <template>
-  <div>
-    <div>
-      <navbarVue/>
-    </div>
-    <div class="body">
-      <defaultVue/>
-    </div>
-  </div>
+    <CBox>
+      <AppNavbar/>
+      <CBox w="50%" m="auto">
+        <DefaultView/>
+      </CBox>
+    </CBox>
 </template>
-<script setup>
-import navbarVue from '~~/components/navbar.vue';
-import defaultVue from '~~/components/defaultView.vue';
-</script>
-<style>
-*{
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
+
+<script lang="js">
+import {CBox} from "@chakra-ui/vue"
+import AppNavbar from "../components/AppNavbar..vue"
+import DefaultView from "../components/DefaultView.vue";
+export default{
+  components:{
+    AppNavbar,CBox,DefaultView
+  }
 }
 
-</style>
+</script>

@@ -1,41 +1,21 @@
 <template>
-   <div class="container">
-       <img src="https://img.freepik.com/premium-vector/comic-speech-bubbles-with-text-quiz-night-neon-icon-symbol-sticker-tag-special-offer-label_100456-7641.jpg?w=2000" alt="Error">
-       <button @click="handleRoute()">Create quiz</button>
-   </div>
+    <CFlex w="50%" m="auto" mt="150px" flexDirection="column" gap="20px">
+         <CImage w="100%" src="https://static.vecteezy.com/system/resources/previews/003/206/208/original/quiz-time-neon-signs-style-text-free-vector.jpg"/>
+         <nuxt-link v-if="$store.state.token" to="/quiz"><CButton w="100%">Create your Quiz</CButton></nuxt-link>
+         <nuxt-link v-else to="/registration/signin"><CButton w="100%">Create your Quiz</CButton></nuxt-link>
+    </CFlex>
 </template>
+<script lang="js">
+  import {CFlex,CImage,CButton} from "@chakra-ui/vue"
 
-<script setup>
-import {ref,onMounted} from "vue"
-const user=ref("")
-
-onMounted(()=>{
-    user.value=JSON.parse(localStorage.getItem("name"))||null
-})
-
-
-const handleRoute=()=>{
-    user.value? navigateTo("/quiz/create"):navigateTo("/account/signin")
-}
+  export default{
+    components:{
+        CImage,CFlex,CButton
+    },
+    mounted() {
+      const token=JSON.parse(localStorage.getItem("accessToken"))||""
+      const name=JSON.parse(localStorage.getItem("name"))||""
+      this.$store.commit("LOGIN_USER",{token,name})
+    }
+  }
 </script>
-
-<style scoped>
-.container{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    margin: auto;
-    margin-top: 50px;
-    gap: 20px;
-}
-.container>img{
-    width: 50%;
-    margin: auto;
-}
-.container>button{
-    width: 20%;
-    margin: auto;
-    padding: 1rem;
-    cursor: pointer;
-}
-</style>
