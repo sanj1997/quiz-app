@@ -2,7 +2,7 @@
     <CBox>
       <AppNavbar/>
       <CBox w="50%" m="auto">
-        <DefaultView/>
+        <DefaultViewVue/>
       </CBox>
     </CBox>
 </template>
@@ -10,10 +10,10 @@
 <script>
 import {CBox} from "@chakra-ui/vue"
 import AppNavbar from "../components/AppNavbar..vue"
-import DefaultView from "../components/DefaultView.vue";
+import DefaultViewVue from "~/components/DefaultView.vue";
 export default{
   components:{
-    AppNavbar,CBox,DefaultView
+    AppNavbar,CBox,DefaultViewVue
   }
 }
 
