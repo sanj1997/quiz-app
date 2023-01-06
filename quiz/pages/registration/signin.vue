@@ -15,7 +15,7 @@
         </CFlex>
     </CBox>
 </template>
-<script lang="js">
+<script>
 
 
 import { CInput, CButton, CBox,CText, CFlex, CFormControl, CFormLabel,useToast } from "@chakra-ui/vue"

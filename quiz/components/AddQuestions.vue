@@ -47,7 +47,7 @@
         </CFlex>
     </CFlex>
 </template>
-<script lang="js">
+<script>
 
 import { CInput, CButton,CText,CFlex, CFormControl, CFormLabel, CSelect, CBox,useToast  } from "@chakra-ui/vue"
 const toast=useToast()

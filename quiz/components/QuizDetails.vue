@@ -19,7 +19,7 @@
         </form>
     </CBox>
 </template>
-<script lang="js">
+<script>
 
 import { CBox,CInput, CButton,CText,CFlex, CFormControl, CFormLabel, CSelect, useToast } from "@chakra-ui/vue"
 const toast=useToast()

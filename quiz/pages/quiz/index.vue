@@ -4,7 +4,7 @@
     <QuizDetailsVue/>
 </CBox>
 </template>
-<script lang="js">
+<script>
 
 import {CBox} from "@chakra-ui/vue"
 import AppNavbarVue from "../../components/AppNavbar..vue";

@@ -7,7 +7,7 @@
     </CBox>
 </template>
 
-<script lang="js">
+<script>
 import {CBox} from "@chakra-ui/vue"
 import AppNavbar from "../components/AppNavbar..vue"
 import DefaultView from "../components/DefaultView.vue";

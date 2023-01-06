@@ -5,7 +5,7 @@
          <nuxt-link v-else to="/registration/signin"><CButton w="100%">Create your Quiz</CButton></nuxt-link>
     </CFlex>
 </template>
-<script lang="js">
+<script>
   import {CFlex,CImage,CButton} from "@chakra-ui/vue"
 
   export default{

@@ -13,7 +13,7 @@
          </CFlex>
     </CFlex>
 </template>
-<script lang="js">
+<script>
   import {CFlex,CImage,CButton} from "@chakra-ui/vue"
   export default{
     components:{
