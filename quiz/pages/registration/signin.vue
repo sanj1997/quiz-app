@@ -23,6 +23,9 @@ import { CInput, CButton, CBox,CText, CFlex, CFormControl, CFormLabel,useToast }
 import AppNavbarVue from '../../components/AppNavbar..vue';
 const toast=useToast()
 export default {
+    created(){
+       console.log(this.$route)
+    },
     data(){
         return {
             email:"",

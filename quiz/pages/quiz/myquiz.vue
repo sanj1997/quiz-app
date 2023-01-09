@@ -11,6 +11,7 @@
     </CBox>
 </template>
 <script>
+
 import {CBox, CButton, CFlex, CText,useToast} from "@chakra-ui/vue"
 import AppNavbarVue from "../../components/AppNavbar..vue"
 const toast=useToast()

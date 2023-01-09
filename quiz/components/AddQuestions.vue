@@ -50,8 +50,13 @@
 <script>
 
 import { CInput, CButton,CText,CFlex, CFormControl, CFormLabel, CSelect, CBox,useToast  } from "@chakra-ui/vue"
+
+
 const toast=useToast()
 export default {
+    created(){
+       console.log(this.$route.params,"hey")
+    },
     data(){
       return {
         count:0,
